@@ -1,0 +1,306 @@
+section {
+    padding: 100px ;
+    margin: auto;
+}
+
+.area{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.biodata .biodata-content,
+.hoppies .hoppies-content,
+.campuslife .campuslife-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+section .title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+section .title::before {
+    content:none;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    transform: translateX(-50%);
+}
+  
+section .title::after {
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: #d68c0c;
+    padding: 0 5px;
+    transform: translateX(-50%);
+} 
+  
+/*  Navbar  */
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 10px 0;
+    font-family: "Ubuntu", sans-serif;
+    transition: all 0.3s ease;
+}
+  
+.navbar .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .label {
+    margin-right: 900px;  
+}
+  
+.navbar .label a {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+  
+/*  Nav Title Span Linear-Gradient  */
+.navbar .label a span {
+    background: linear-gradient(135deg,#FCCF31, #F55555);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease;
+}
+  
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+  
+.navbar .menu li a {
+    display: block;
+    color: #b2b2b2;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+  
+.navbar .menu li a:hover {
+    color: #d68c0c ;
+}
+  
+/*  Home  */
+.home {
+    display: flex;
+    background: url("https://wallpapers.com/images/hd/pretty-blue-07bmoyjklarnxx2x.jpg");
+    height: 100vh;
+    width: auto;
+    color: whitesmoke;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 20px;
+    font-family: "Ubuntu", sans-serif;
+}
+  
+  
+.home .max-width .row {
+    margin-right: 0;
+}
+  
+.home .home-content .text-1 {
+    font-size: 27px;
+}
+  
+.home .home-content .text-2 {
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+  
+.home .home-content .text-3 {
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+/* Biodata */
+
+.biodata{
+    background: radial-gradient(#e1efff, white);
+    width:auto;
+}
+
+.biodata .title::after{
+    content: "- Here's Who I Am -";
+}
+
+.biodata .biodata-content .left{
+    width: 40%;
+}
+
+.biodata .biodata-content .left:hover{
+    transform:scale(1.05);
+}
+
+.biodata .biodata-content .left img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.biodata .biodata-content .right {
+    width: 60%;
+}
+  
+.biodata .biodata-content .right .table, th, td {
+    border: 1px solid rgb(56, 56, 56);
+    border-collapse: collapse;
+}
+
+.hobbies{
+    color: #000000;
+    background: #e5f7ff;
+    width:auto;
+}
+
+.hobbies .title::after{
+    content: "- Enjoyable & fulfilling leisure activities -";
+}
+
+.hobbies .hobbies-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hobbies .hobbies-content .row{
+    width: auto;
+    background: #ffffff;
+    text-align: center;
+    border-radius: 20px;
+    margin: 30px;
+    padding: 50px 25px;
+    align-items: center;
+}
+
+.hobbies .hobbies-content .row:hover{
+    background: #e1efff;
+}
+
+.hobbies .hobbies-content .row:hover .column{
+    transform: scale(1.08);
+}
+
+.hobbies .hobbies-content .row .column .text{
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #111;
+}
+
+.hobbies .hobbies-content .row .column .text1{
+    font-size: medium;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #111;
+    text-align: justify;
+    padding: 0px 20px 0px 20px;
+}
+
+.hobbies .hobbies-content .row .column .photo{
+    width: 200px;
+    height: 200px;
+    border: 3px solid #ffffff;
+}
+
+.hobbies .hobbies-content .row:hover .photo{
+    border-color:#0f0f0f;
+}
+
+.campuslife{
+    background: radial-gradient(#e1efff, white);
+    width:auto;
+}
+
+.campuslife .title::after{
+    content: "- Dynamic, Vibrant, Community, Growth -";
+}
+
+.campuslife-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.campuslife .campuslife-content .row{
+    width: auto;
+    background: #e5f7ff;
+    text-align: center;
+    border-radius: 20px;
+    margin: 30px;
+    padding: 50px 25px;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.085);
+}
+
+.campuslife .campuslife-content .row:hover{
+    background: #e1efff;
+}
+
+.campuslife .campuslife-content .row:hover .column{
+    transform: scale(1.08);
+}
+
+.campuslife .campuslife-content .column .text{
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #111;
+}
+
+.campuslife .campuslife-content .column .text1{
+    font-size: medium;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #111;
+    text-align: center;
+    padding: 0px 20px 0px 20px;
+}
+
+.campuslife .campuslife-content .photo{
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #939595;
+}
+
+.campuslife .campuslife-content .row:hover .photo{
+    border-color:#0f0f0f;
+}
+
+@media (max-width: 947px) {
+    .area {
+      max-width: 930px;
+    }
+    .biodata .biodata-content .column {
+      width: 100%;
+    }
+    .biodata .biodata-content .left {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto 60px;
+    }
+    .biodata .biodata-content .right {
+      flex: 100%;
+    }
+}
